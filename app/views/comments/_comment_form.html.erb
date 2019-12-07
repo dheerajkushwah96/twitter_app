@@ -1,0 +1,12 @@
+  <%= form_for [tweet, Comment.new] do |f| %>
+    <div class="row">
+      <div class="columns">
+        <%= f.text_field :name, label: false, input_html: { class: "input columns-section"}, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a new comments..."%>
+        <p>
+          <%= f.submit :submit, class: 'button is-info' %>
+        </p>
+      </div>
+    </div>
+
+    
+  <%end%>

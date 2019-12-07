@@ -1,0 +1,42 @@
+<div class="column is-one-quarter">
+  <nav class="panel">
+    <p class="panel-heading">Heading</p>
+    <div class="panel-block">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64*64">
+            <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+          </figure>
+        </div>
+        <div>
+          <div>
+            <p>
+              <strong><%= current_user.name %></strong><br/>
+              <small><%= current_user.username %></small>
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="panel-block">
+      <div class="row">
+        <div class="column">
+          <p class="heading"> Tweets</p>
+          <p class="titel is-6"> <%= current_user.tweets.count %></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p class="heading"> Following </p>
+          <p class="titel is-6"><%=current_user.following.count%> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p class="heading">Followers</p>
+          <p class="titel is-6"><%=current_user.followers.count%></p>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

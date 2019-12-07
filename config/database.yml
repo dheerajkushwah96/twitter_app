@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: twitter_development
+  username: root
+  password: root
+  host: localhost # not mandatory
+  pool: 5 # not mandatory
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: twitter_production
+  username: root
+  password: root
+  host: localhost # not mandatory
+  pool: 5 # not mandatory

@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <% if user_signed_in? %>
+        <%= render 'tweets/profile' %>
+      <%else%>
+        <%= render 'tread' %>
+      <%end%>
+      <%= render 'home' %>
+    </div>
+  </div>
+</section>

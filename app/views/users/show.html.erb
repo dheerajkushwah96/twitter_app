@@ -1,0 +1,7 @@
+<h1>Profile Page for <%= @user.username %></h1>
+
+<p><%= @user.username %></p>
+
+<% @user.tweets.each do |tweet| %>
+  <p><%= tweet.content %></p>
+<% end %>

@@ -1,6 +1,7 @@
 set :application, "twitter"
 set :repo_url, "git@github.com:dheerajku/twitter_app.git"
 
+set :use_sudo, true
 # Deploy to the user's home directory
 set :deploy_to, "/home/ubuntu/#{fetch :application}"
 

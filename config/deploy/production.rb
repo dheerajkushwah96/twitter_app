@@ -45,8 +45,8 @@ server '13.233.56.246', user: 'ubuntu', roles: %w{app db web}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/home/dheeraj/.ssh/id_rsa),
-   user: "dheeraj",
+   keys: %w(/home/ubuntu/.ssh/id_rsa),
+   user: "ubuntu",
    forward_agent: true
   }
 #

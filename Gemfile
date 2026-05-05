@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -54,7 +54,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'better_errors', '~> 2.5'
+  gem 'better_errors', '~> 2.8'
   gem 'guard'
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
